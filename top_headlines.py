@@ -1,7 +1,17 @@
 from logging import captureWarnings
 from flask import Flask, render_template
+import json, urllib.request
+import requests
+
+
+api_key = "AyV51ehAf31OGNMb6O3su3s2su9ISYVI"
 
 app = Flask(__name__)
+'''
+root = "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key="
+res = requests.get(root, api_key)
+'''
+
 
 @app.route('/')
 def index():
