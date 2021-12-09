@@ -1,11 +1,11 @@
 from logging import captureWarnings
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Top Headlines</h1>'
+    return render_template('template1.html', name="joe", topic="guns", opinion="guns are bad")
 
 
 @app.route('/about')
