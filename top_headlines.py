@@ -4,8 +4,6 @@ import json, urllib.request
 import requests
 from secret import api_key
 
-#api_key = "AyV51ehAf31OGNMb6O3su3s2su9ISYVI"
-
 app = Flask(__name__)
 root = "https://api.nytimes.com/svc/topstories/v2/technology.json?api-key="
 temp = root + api_key
